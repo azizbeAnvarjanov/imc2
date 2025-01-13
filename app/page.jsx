@@ -32,8 +32,8 @@ const Home = () => {
 
     if (location) {
       const predefinedLocation = {
-        latitude: 40.930456171226965,
-        longitude: 71.89344277911185,
+        latitude: 40.930202,
+        longitude: 71.8937198,
       }; // Ish joyining lat/long 40.930456171226965, 71.89344277911185
       const distance = calculateDistance(
         location.latitude,
@@ -79,7 +79,7 @@ const Home = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <h1 className="text-3xl font-bold mb-4">Xodimlar Tizimi</h1>
-      <GetLocation />
+      {/* <GetLocation /> */}
       <div className="mb-4">
         <button
           onClick={() => checkLocation(true)}
