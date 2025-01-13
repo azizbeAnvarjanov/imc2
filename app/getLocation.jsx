@@ -31,7 +31,7 @@ const GetLocation = () => {
           onClick={getLocation}
           className="bg-blue-500 text-white p-4 rounded-lg"
         >
-          Hozirgi joylashuvni ko'rish
+          Hozirgi joylashuvni korish
         </button>
       </div>
 
