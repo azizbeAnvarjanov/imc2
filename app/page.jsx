@@ -1,5 +1,8 @@
 "use client";
 import { useState } from "react";
+import saveDataToFirebase from "./firebase";
+
+import GetLocation from "./getLocation";
 
 const Home = () => {
   const [location, setLocation] = useState(null);
@@ -76,6 +79,7 @@ const Home = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <h1 className="text-3xl font-bold mb-4">Xodimlar Tizimi</h1>
+      <GetLocation />
       <div className="mb-4">
         <button
           onClick={() => checkLocation(true)}
