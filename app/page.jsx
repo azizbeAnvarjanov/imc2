@@ -80,6 +80,7 @@ const Home = () => {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <h1 className="text-3xl font-bold mb-4">Xodimlar Tizimi</h1>
       {/* <GetLocation /> */}
+      <h1>hi</h1>
       <div className="mb-4">
         <button
           onClick={() => checkLocation(true)}
