@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 import GetUserFS from "./components/GetUser";
 import checkUserInDatabase from "./components/checkUserInDatabase";
 import Navbar from "./components/Navbar";
