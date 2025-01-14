@@ -17,9 +17,8 @@ const storage = getStorage(app);
 
 export { db, storage };
 
-const saveDataToFirebase = (isArrival) => {
-  const currentUser = firebase.auth().currentUser;
-  const userRef = firebase.database().ref(`users/${currentUser.uid}`);
+const saveDataToFirebase = (isArrival, user) => {
+  const userRef = firebase.database().ref(`users/${user.id}`);
 
   userRef.set({
     status: isArrival ? "kelgan" : "ketgan",
